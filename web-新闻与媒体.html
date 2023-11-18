@@ -1,0 +1,278 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>web-新闻与媒体</title>
+	<style>
+		.nav{
+			width:100%;
+			height:85px;
+			border:0px solid red;
+			display: flex;
+			background:#3B99FC;
+			align-content: center;
+/*			padding: 0 22% 0 22%;*/
+			align-content: center;
+    		justify-content: center;
+		}
+		*{
+			margin: 0px;
+			padding:0px;
+			text-decoration: none;
+			list-style: none;
+		}
+		.nav_logo{
+			width:130px;
+			height:85px;
+			border:1px solid black;
+			margin: 0px 0px;
+			display: inline-block;
+			text-align: center;
+			vertical-align: top;
+/*			margin-top: 1px;*/
+		}
+		.btli{
+			float: left;
+			width: 138px;
+			line-height: 85px;
+			text-align: center;
+			position:relative;
+			z-index: 50;
+		}
+		.btli-first{
+			float: left;
+			width: 138px;
+			line-height: 85px;
+			text-align: center;
+			background: #2676E3;
+		}
+/*
+		.navlist{
+			float: right;
+		}
+*/
+		.navlist a{
+			color: #fff;
+			display: block;
+		}
+		.navlist a:hover{
+			background: #2676E3;
+		}
+		
+		.droplist{
+			background: #3B99FC;
+/*			背景半透明*/
+			background-color: rgba(59, 153, 252, 0.5);
+			display: none;
+			
+		}
+		.btli:hover .droplist{
+			display: block;
+		}
+		#music_title{
+			width: 100%;
+			height: 75px;
+			background:#C6C6C6;
+			font-family: LiSu;
+			text-align: center;
+			line-height: 75px;
+			font-size: 30px;
+			margin-top: 30px;
+		}
+		.music_background{
+			width: 100%;
+			height: 3220px;
+			background: #F4F4F4;
+/*			border: 1px solid red;*/
+		}
+		.music{
+			width: 980px;
+			height: 1510px;
+/*			border: 1px solid blue;*/
+			background: #FFFFFF;
+			margin: 0px auto;
+		}
+		.music_image{
+			width:100%;
+			height: 615px;
+			margin-top: 15px;
+			margin-bottom: 30px;
+		}
+		.music_word_container{
+			width: 900px;
+			height: 100%;
+			margin: 0px auto;
+		}
+		.music_word{
+			width: 100%;;
+			height: 895px;
+/*			border: 1px solid green;*/
+/*			margin-right: 0px;*/
+/*
+			margin-left: 480px;
+			margin-top: 0px;
+*/
+			font-size: 16px;
+			line-height: 45px;
+			text-align: left;
+		}
+		.music_word h2{
+			text-align: center;
+		}
+		#life_title{
+			width: 100%;
+			height: 75px;
+			background:#C6C6C6;
+			font-family: LiSu;
+			text-align: center;
+			line-height: 75px;
+			font-size: 30px;
+			margin-top: 30px;
+		}
+		.life_background{
+			width: 100%;
+			height: 1240px;
+			background: #F4F4F4;
+/*			border: 1px solid red;*/
+		}
+		.life{
+			width: 980px;
+			height: 1240px;
+/*			border: 1px solid blue;*/
+			background: #FFFFFF;
+			margin: 0px auto;
+		}
+		.life_image{
+			width:100%;
+			height: 615px;
+			margin-top: 15px;
+			margin-bottom: 30px;
+		}
+		.life_word_container{
+			width: 900px;
+			height: 625px;
+			margin: 0px auto;
+		}
+		.life_word{
+			width: 100%;;
+			height: 100%;
+/*			border: 1px solid green;*/
+/*			margin-right: 0px;*/
+/*
+			margin-left: 480px;
+			margin-top: 0px;
+*/
+			font-size: 16px;
+			line-height: 45px;
+			text-align: left;
+		}
+		.life_word h2{
+			text-align: center;
+		}
+		.aim{
+			widows: 100%;
+			height: 140px;
+			background: #CAAE6A;
+			color: #EBEBEB;
+			font-size: 17px;
+			text-align: center;
+			display: flex;
+    		align-items: center;
+			justify-content: center;
+			margin-top: 80px;
+		}
+		.last{
+			widows: 100%;
+			height: 70px;
+			background: #333333;
+			color: #EBEBEB;
+			font-size: 17px;
+			text-align: center;
+			line-height: 70px;
+			margin-top: 70px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="nav">
+		<div class="nav_logo">
+				<img src="image/logo.jpg" width="130" height="85" alt=""/>
+			</div>
+		<ul class="navlist">
+			<li class="btli"><a href="web-首页.html">首页</a></li>
+			<li class="btli"><a href="web-个人经历.html">个人经历&or;</a>
+				<ul class="droplist">
+					<li><a href="web-个人经历.html#introduce_title">个人简介</a></li>
+					<li><a href="web-个人经历.html#act_title">演艺经历</a></li>
+					<li><a href="web-个人经历.html#evaluate_title">人物评价</a></li>
+				</ul>
+			</li>
+			<li class="btli"><a href="web-音乐作品.html">音乐作品&or;</a>
+				<ul class="droplist">
+					<li><a href="web-音乐作品.html#album_title">精选专辑</a></li>
+					<li><a href="web-音乐作品.html#music_title">精选音乐单曲</a></li>
+				</ul>
+			</li>
+			<li class="btli"><a href="web-演出日程.html">演出日程&or;</a>
+				<ul class="droplist">
+					<li><a href="web-演出日程.html#concert1_title">地表最强2</a></li>
+					<li><a href="web-演出日程.html#concert2_title">嘉年华</a></li>
+				</ul>
+			</li>
+			<li class="btli-first"><a href=""><b>新闻与媒体</b></a></li>
+			<li class="btli"><a href="">社区互动&or;</a>
+				<ul class="droplist">
+					<li><a href="">下拉</a></li>
+					<li><a href="">下拉</a></li>
+					<li><a href="">下拉</a></li>
+					<li><a href="">下拉</a></li>
+				</ul>
+			</li>
+			<li class="btli"><a href="">商城&or;</a>
+				<ul class="droplist">
+					<li><a href="">下拉</a></li>
+					<li><a href="">下拉</a></li>
+					<li><a href="">下拉</a></li>
+					<li><a href="">下拉</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div id="music_title">作品资讯</div>
+	<div class="music_background">
+		<div class="music">
+			<div class="music_image"><img src="image/红颜如霜.jpg" width="100%" height="100%" /></div>
+			<div class="music_word_container">
+				<div class="music_word"><h2>红颜如霜MV再献惊喜！合作美国超大咖导演嘻哈舞团</h2>乐坛天王周杰伦独树一帜的中国风歌曲总是令人惊艳！在新歌〈红顏如霜〉以梨园名剧《凤求凰》作为整首作品点睛之笔，融入R＆B、京剧唱腔，带给歌迷新感受。而MV中，周杰伦与美国知名嘻哈舞团JABBAWOCKEEZ（中文名：假面舞客）合作舞蹈表现，视觉上崭新的诠释赋予中国风创新的面貌！<br>由周杰伦作曲、方文山填词的〈红顏如霜〉以古筝拉开序幕，将现代的R＆B融入中国风里，唱到歌词「凤求凰」时转变成模拟京剧吊嗓子的唱法，巧妙衔接古代与现代的抒情，彷佛看到两个透过书信往返的情人，见证一段情感流逝、凝结如霜。MV也融合古典与现代，周杰伦置身充满古典气息的场景中拨弄古筝琴弦，古意盎然！一会儿又与JABBAWOCKEEZ舞团跳现代风格舞蹈，令人耳目一新。<br>美国嘻哈舞蹈团体JABBAWOCKEEZ于2003年成立于San Diego，荣获过许多舞蹈大赛冠军，也在「美国达人秀」火红，首次与亚洲歌手合作，他们为此深入瞭解这首歌，舞蹈设计细微用心，有戏曲的身段与氛围出现，也是他们投入中国风歌曲表演的全新尝试。<br>JABBAWOCKEEZ团员们对于能与周杰伦合作都感到相当荣幸！舞蹈总监Kevin Brewer是李小龙的粉丝，他看过电影《青蜂侠》，很欣赏周杰伦演出的Kato，他说；「Jay当时就是饰演李小龙的角色Kato，而他并不照原本李小龙的模式来演，是带有神秘感的Kato，有好身手、又有趣，我很欣赏他在电影里的演出，这也是我们觉得一定要参与这次合作的重要催化剂，能跟Jay Chou合作就是一件很棒的事情！」周杰伦笑说；「这次的中国风是可以跳舞的喔！好玩的是，我在《青蜂侠》里戴着面具，他们的招牌也是面具，只差我没戴着Kato的面具跳舞了！哈！」<br>MV由美国导演Mike Ho执导，他曾执导过Jennifer Lopez＆Bad Bunny、Mary J.Blige、Nick Minaj、21 Savage等眾多知名歌手MV，这是他第一次执导华语歌曲MV，Mike Ho说；「这首歌对我来说感觉很不一样！我喜欢它的旋律和音乐，是一首很棒的歌！我是Jay和JABBAWOCKEEZ的粉丝，我很高兴能把我过去的经验融入到这支MV中。」
+				</div>
+			</div>
+		</div>
+		<div class="music">
+			<div class="music_image"><img src="image/最伟大的作品.jpg" width="100%" height="100%" /></div>
+			<div class="music_word_container">
+				<div class="music_word"><h2>周杰伦「最伟大的作品」集壮阔美景 法国圣米歇尔山拍摄封面 把艺术结合进作品中</h2>乐坛天王周杰伦睽违六年即将在7月15日推出新专辑「最伟大的作品」，精彩MV在全球许多地方都是发烧影片，讨论热度有增无减！许多老外网红也惊艳，纷纷加入讨论行列！而周杰伦妈妈叶惠美女士看过后更是直呼：「儿子怎么这么有创意！」MV取景法国多处知名景点，专辑封面也是在法国素有「天空之城」美誉的圣米歇尔山实地拍摄，壮阔入镜！<br>圣米歇尔山是法国圣玛洛湾上的一座岩石岛，距离海岸约一公里，海水退潮时周围的沙岸会显露出来，涨潮时则变成一座被海水包围的孤岛，这座中古世纪的“沙丘堡垒”转瞬就会变成壮观的“海上城堡”，是法国著名的旅游景点。工作团队利用这景点的特色捕捉美景，圣米歇尔山与水面上的倒影相互辉映，周杰伦置身其中，如梦似幻，景致别具一格！此景也成为了周杰伦这张「最伟大的作品」专辑封面，其中的奥妙还包含呼应了专辑里「倒影」这首歌曲。<br>首波同名主打「最伟大的作品」MV藉由时空旅人将艺术家与其作品精神相串连，话题热度居高不下！周杰伦妈妈叶惠美女士其实在歌曲未推出前就看过MV，对MV是赞不绝口！周妈妈说：「杰伦把音乐结合绘画艺术，又放进魔术，真的很特别！我儿子真的很有创意！」周杰伦一拍完MV就跟妈妈分享，母子俩还一起讨论了MV里的艺术家与剧情，事实上叶惠美女士可说是周杰伦的艺术启蒙老师！美术老师退休的周妈妈，记得在杰伦小时候，家里挂着梵谷的复制画，她会跟杰伦讲述一些艺术家的故事，周杰伦说：「小时候妈妈一边作画、而我一边弹着钢琴的画面，是我童年美好的回忆之一。我很幸运地小时候就在艺术氛围里长大，妈妈给我很大的影响。」<br>周妈妈说：「其实杰伦小时候就对艺术画作有兴趣，长大后还带我到罗浮宫、奥赛美术馆…看展览，看到这支MV想起杰伦带我在法国旅游时，去了里昂车站的蓝色列车餐厅、莫内花园…，也都成为他 MV里的素材了。」MV中还有许多魔术巧思，周妈妈透露杰伦小时候就很喜欢变魔术！印象深刻的是曾经在百货公司的儿童玩具区买过魔术盒给他，没想到周杰伦长大后魔术越来越厉害。<br>全球许多网红也对周杰伦这首「最伟大的作品」做了解析，不少老外网红对他的音乐及MV表现都佩服不已！YouTuber「不是柯桑德」邀请了音乐人Joe评价这首歌，Joe注意到许多音乐细节，他说：「他的打击乐风格非常新颖…，这个就是Trap风格的鼓，在现代嘻哈里是非常流行的，所以即使这仍然是一首周杰伦味道十足的歌，他还是更新了这个风格，比他早期的嘻哈歌曲，给人感觉更现代了！是一首一遍又一遍想去听的歌曲。」音乐人Joe从专业技术分析、到歌词内容、背后含意…，给予这首歌曲极高评价，最后还用琵琶cover了一段音乐，相当有意思！
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="life_title">日常动态</div>
+	<div class="life_background">
+		<div class="life">
+			<div class="life_image"><img src="image/12月单曲.jpg" width="100%" height="100%" /> </div>
+			<div class="life_word_container">
+				<div class="life_word">
+					<h2>周杰伦预告将发新单曲：12月等着！网友：是哪年12月</h2>11月15日，#周杰伦预告12月新单曲#登上热搜。近日，周杰伦在社交平台上称：“闲不下来，过一阵子发个单曲给你们会不会吓坏?”而当时不少粉丝认为周董又在画饼。11月15日，周杰伦再次更新动态：“新单曲，12月等着 ”<br>对此，网友纷纷表示期待：“快进到12月“”12月第一个好消息”“提前过年是吧……”不过，也有网友表示要冷静，求这次不被“放鸽子”：“别高兴太早，他没说哪年12月”“最好是今年的12月”“先不猜哪一天了，先猜哪一年吧……”<br>去年7月，周杰伦时隔6年推出新专辑《最伟大的作品》，引发全网粉丝狂欢。整张专辑中只有6首是新歌，对此，周杰伦回应称，希望每年出一张专辑，如果不行那就单曲。不过随后他又幽默地说：“算了算了，我还是收回我的话，话不能说得太早。”<br>目前，周杰伦已经预告将会在12月发行新单曲，并引起了粉丝们的期待。周董之前曾表示希望每年推出一张专辑，但也开玩笑地收回了这个说法。<br>去年他发布了《最伟大的作品》专辑，其中只有6首是新歌。因此，粉丝们对他在社交媒体上的预告还保持着一些期待，但同时也有人提醒要保持冷静，避免再次被“放鸽子”。无论如何，我们只能等到12月的到来，看看周杰伦是否会如期发布新单曲。对于他的粉丝来说，这无疑是一个令人兴奋的时刻，期待着他带来的音乐惊喜。让我们一起静候12月的到来，见证周杰伦的新作品！
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="aim">
+		如果你也听JAY，那我们就是朋友<br>
+		本站致力于宣传周杰伦的一些作品，帮助广大杰迷朋友和音乐爱好者
+	</div>
+	<div class="last">
+		JAY&nbsp;&nbsp;&nbsp;"www.123456789.com"
+	</div>
+</body>
+</html>

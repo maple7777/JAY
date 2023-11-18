@@ -1,0 +1,273 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>web-演出日程</title>
+	<style>
+		.nav{
+			width:100%;
+			height:85px;
+			border:0px solid red;
+			display: flex;
+			background:#3B99FC;
+			align-content: center;
+/*			padding: 0 22% 0 22%;*/
+			align-content: center;
+    		justify-content: center;
+		}
+		*{
+			margin: 0px;
+			padding:0px;
+			text-decoration: none;
+			list-style: none;
+		}
+		.nav_logo{
+			width:130px;
+			height:85px;
+			border:1px solid black;
+			margin: 0px 0px;
+			display: inline-block;
+			text-align: center;
+			vertical-align: top;
+/*			margin-top: 1px;*/
+		}
+		.btli{
+			float: left;
+			width: 138px;
+			line-height: 85px;
+			text-align: center;
+			position:relative;
+			z-index: 50;
+		}
+		.btli-first{
+			float: left;
+			width: 138px;
+			line-height: 85px;
+			text-align: center;
+			background: #2676E3;
+		}
+/*
+		.navlist{
+			float: right;
+		}
+*/
+		.navlist a{
+			color: #fff;
+			display: block;
+		}
+		.navlist a:hover{
+			background: #2676E3;
+		}
+		
+		.droplist{
+			background: #3B99FC;
+/*			背景半透明*/
+			background-color: rgba(59, 153, 252, 0.5);
+			display: none;
+			
+		}
+		.btli:hover .droplist{
+			display: block;
+		}
+		.droplist li{
+			border-top: 1px solid #FFFFFF;
+			
+		}
+		#concert1_title{
+			width: 100%;
+			height: 75px;
+			background:#C6C6C6;
+			font-family: LiSu;
+			text-align: center;
+			line-height: 75px;
+			font-size: 30px;
+			margin-top: 30px;
+		}
+		.concert1_background{
+			width: 100%;
+			height: 720px;
+			background: #F4F4F4;
+/*			border: 1px solid red;*/
+		}
+		.concert1{
+			width: 980px;
+			height: 720px;
+/*			border: 1px solid blue;*/
+			background: #FFFFFF;
+			margin: 0px auto;
+		}
+		.concert1_image_container{
+			width: 320px;
+			height: 100%;
+			float: left;
+		}
+		.concert1_image{
+			width:320px;
+			height: 450px;
+			margin-top: 135px;
+		}
+		.concert1_word{
+			width: 500px;
+			height: 100%;
+/*			border: 1px solid green;*/
+			float: left;
+/*			margin-right: 0px;*/
+/*
+			margin-left: 480px;
+			margin-top: 0px;
+*/
+			margin-left: 158px;
+			font-size: 14px;
+			line-height: 30px;
+			text-align: center;
+		}
+		#concert2_title{
+			width: 100%;
+			height: 75px;
+			background:#C6C6C6;
+			font-family: LiSu;
+			text-align: center;
+			line-height: 75px;
+			font-size: 30px;
+			margin-top: 90px;
+		}
+		.concert2_background{
+			width: 100%;
+			height: 750px;
+			background: #F4F4F4;
+/*			border: 1px solid red;*/
+		}
+		.concert2{
+			width: 980px;
+			height: 750px;
+/*			border: 1px solid blue;*/
+			background: #FFFFFF;
+			margin: 0px auto;
+		}
+		.concert2_word{
+			width: 500px;
+			height: 100%;
+/*			border: 1px solid green;*/
+/*			margin-right: 0px;*/
+/*
+			margin-left: 480px;
+			margin-top: 0px;
+*/
+			font-size: 14px;
+			line-height: 30px;
+			text-align: center;
+			float: left;
+		}
+		.concert2_image_container{
+			width: 320px;
+			height: 100%;
+/*			border: 1px solid red;*/
+			float: left;
+			margin-left: 160px;
+		}
+		.concert2_image{
+			width:320px;
+			height: 450px;
+			margin-top: 150px;
+		}
+		.aim{
+			widows: 100%;
+			height: 140px;
+			background: #CAAE6A;
+			color: #EBEBEB;
+			font-size: 17px;
+			text-align: center;
+			display: flex;
+    		align-items: center;
+			justify-content: center;
+			margin-top: 80px;
+		}
+		.last{
+			widows: 100%;
+			height: 70px;
+			background: #333333;
+			color: #EBEBEB;
+			font-size: 17px;
+			text-align: center;
+			line-height: 70px;
+			margin-top: 70px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="nav">
+		<div class="nav_logo">
+				<img src="image/logo.jpg" width="130" height="85" alt=""/>
+			</div>
+		<ul class="navlist">
+			<li class="btli"><a href="web-首页.html">首页</a></li>
+			<li class="btli"><a href="web-个人经历.html">个人经历&or;</a>
+				<ul class="droplist">
+					<li><a href="web-个人经历.html#introduce_title">个人简介</a></li>
+					<li><a href="web-个人经历.html#act_title">演艺经历</a></li>
+					<li><a href="web-个人经历.html#evaluate_title">人物评价</a></li>
+				</ul>
+			</li>
+			<li class="btli"><a href="web-音乐作品.html">音乐作品&or;</a>
+				<ul class="droplist">
+					<li><a href="web-音乐作品.html#album_title">精选专辑</a></li>
+					<li><a href="web-音乐作品.html#music_title">精选音乐单曲</a></li>
+				</ul>
+			</li>
+			<li class="btli-first"><a href=""><b>演出日程</b></a></li>
+			<li class="btli"><a href="web-新闻与媒体.html">新闻与媒体&or;</a>
+				<ul class="droplist">
+					<li><a href="web-新闻与媒体.html#music_title">作品咨询</a></li>
+					<li><a href="web-新闻与媒体.html#life_title">日常动态</a></li>
+				</ul>
+			</li>
+			<li class="btli"><a href="">社区互动&or;</a>
+				<ul class="droplist">
+					<li><a href="">下拉</a></li>
+					<li><a href="">下拉</a></li>
+					<li><a href="">下拉</a></li>
+					<li><a href="">下拉</a></li>
+				</ul>
+			</li>
+			<li class="btli"><a href="">商城&or;</a>
+				<ul class="droplist">
+					<li><a href="">下拉</a></li>
+					<li><a href="">下拉</a></li>
+					<li><a href="">下拉</a></li>
+					<li><a href="">下拉</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div id="concert1_title">地表最强2</div>
+	<div class="concert1_background">
+		<div class="concert1">
+			<div class="concert1_image_container">
+				<div class="concert1_image"><img src="image/地表最强2.jpg" width="100%" height="100%"/></div>
+			</div>
+			<div class="concert1_word">
+				<b>新加坡站</b>:2018.01.06<br><b>吉隆坡</b>:2018.01.27<br><b>香港</b>:2018.03.15-2018.03.25<br><b>悉尼</b>:2018.04.07<br><b>珠海</b>:2018.04.21-2018.04.22<br><b>成都</b>:2018.05.01-2018.05.02<br><b>长沙</b>:2018.05.11-2018.05.12<br><b>金华</b>:2018.05.19<br><b>常州</b>:2018.05.26-2018.05.27<br><b>上海</b>:2018.06.15-2018.06.18<br><b>福州</b>:2018.06.23-2018.06.24<br><b>郑州</b>:2018.07.07-2018.07.08<br><b>大连</b>:2018.07.14-2018.07.15<br><b>徐州</b>:2018.07.28<br><b>青岛</b>:2018.08.23-2018.08.24<br><b>太原</b>:2018.09.01-2018.09.02<br><b>洛阳</b>:2018.09.30<br><b>绍兴</b>:2018.10.20-2018.10.21<br><b>泉州</b>:2018.10.27-2018.10.28<br><b>贵阳</b>:2018.11.17-2018.11.18<br><b>澳门</b>:2018.12.14-2018.12.17<br><b>拉斯维加斯</b>:2019.02.09-2019.02.10<br><b>伦敦</b>:2019.04.26-2019.04.27<br><b>巴黎</b>:201.05.02<br>
+			</div>
+		</div>
+	</div>
+	<div id="concert2_title">嘉年华</div>
+	<div class="concert2_background">
+		<div class="concert2">
+			<div class="concert2_word">
+				<b>上海</b>:2019.10.17-2019.10.20<br><b>济南</b>:2019.10.25-2019.10.26<br><b>南京</b>:2019.11.02-2019.11.03<br><b>长沙</b>:2019.11.09-2019.11.10<br><b>杭州</b>:2019.11.16-2019.11.17<br><b>厦门</b>:2019.11.23-2019.11.24<br><b>深圳</b>:2019.12.29-2019.12.30<br><b>新加坡</b>:2020.01.10-2020.01.11<br><b>新加坡</b>:2022.12.17-2022.12.18<br><b>大马</b>:2023.01.15<br><b>吉隆坡</b>:2023.01.07<br><b>悉尼</b>:2023.03.04<br><b>香港</b>:2023.05.05-2023.05.14<br><b>海口</b>:2023.06.29-2023.07.02<br><b>呼和浩特</b>:2023.08.17-2023.08.20<br><b>天津</b>:2023.09.07-2023.09.10<br><b>太原</b>:2023.09.21-2023.09.23<br><b>上海</b>:2023.10.12-2023.10.15<br><b>曼谷</b>:2023.12.09<br><b>伦敦</b>:2024.01.09-2024.01.10<br><b>巴黎</b>:2024.01.13<br><b>悉尼</b>:2024.03.02<br><b>墨尔本</b>:2024.03.16-2024.03.17<br><b>横滨</b>:2024.04.06-2024.04.07<br><b>福州</b>:2024.05.16-2024.05.19<br>
+			</div>
+			<div class="concert2_image_container">
+				<div class="concert2_image"><img src="image/嘉年华.jpg" width="100%" height="100%" /></div>
+			</div>
+		</div>
+	</div>
+	<div class="aim">
+		如果你也听JAY，那我们就是朋友<br>
+		本站致力于宣传周杰伦的一些作品，帮助广大杰迷朋友和音乐爱好者
+	</div>
+	<div class="last">
+		JAY&nbsp;&nbsp;&nbsp;"www.123456789.com"
+	</div>
+</body>
+</html>

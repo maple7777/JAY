@@ -1,0 +1,361 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>web-音乐作品</title>
+	<style>
+		.nav{
+			width:100%;
+			height:85px;
+			border:0px solid red;
+			display: flex;
+			background:#3B99FC;
+			align-content: center;
+/*			padding: 0 22% 0 22%;*/
+			align-content: center;
+    		justify-content: center;
+		}
+		*{
+			margin: 0px;
+			padding:0px;
+			text-decoration: none;
+			list-style: none;
+		}
+		.nav_logo{
+			width:130px;
+			height:85px;
+			border:1px solid black;
+			margin: 0px 0px;
+			display: inline-block;
+			text-align: center;
+			vertical-align: top;
+/*			margin-top: 1px;*/
+		}
+		.btli{
+			float: left;
+			width: 138px;
+			line-height: 85px;
+			text-align: center;
+			position:relative;
+			z-index: 50;
+		}
+		.btli-first{
+			float: left;
+			width: 138px;
+			line-height: 85px;
+			text-align: center;
+			background: #2676E3;
+		}
+/*
+		.navlist{
+			float: right;
+		}
+*/
+		.navlist a{
+			color: #fff;
+			display: block;
+		}
+		.navlist a:hover{
+			background: #2676E3;
+		}
+		
+		.droplist{
+			background: #3B99FC;
+/*			背景半透明*/
+			background-color: rgba(59, 153, 252, 0.5);
+			display: none;
+			
+		}
+		.btli:hover .droplist{
+			display: block;
+		}
+		.droplist li{
+			border-top: 1px solid #FFFFFF;
+			
+		}
+		#album_title{
+			width: 100%;
+			height: 75px;
+			background:#C6C6C6;
+			font-family: LiSu;
+			text-align: center;
+			line-height: 75px;
+			font-size: 30px;
+		}
+		.album_background{
+			width: 100%;
+			height: 700px;
+			background: #F4F4F4;
+		}
+		.album{
+			width: 1200px;
+			height: 700px;
+/*			border: 1px solid red;*/
+			margin: 0px auto;
+			
+		}
+		.album_content{
+			width: 285px;
+			height: 324px;
+/*			border: 1px solid blue;*/
+			float: left;
+			margin-left: 10px;
+			margin-top: 17px;
+		}
+		
+		#music_title{
+			width: 100%;
+			height: 75px;
+			background:#C6C6C6;
+			font-family: LiSu;
+			text-align: center;
+			line-height: 75px;
+			font-size: 30px;
+			margin-top: 30px;
+		}
+		.music_background{
+			width: 100%;
+			height: 1600px;
+			background: #F4F4F4;
+/*			border: 1px solid red;*/
+		}
+		.music{
+			width: 1200px;
+			height: 1600px;
+/*			border: 1px solid red;*/
+			margin: 0px auto;
+			
+		}
+		.music_content{
+			width: 285px;
+			height: 380px;
+/*			border: 1px solid blue;*/
+			float: left;
+			margin-left: 10px;
+			margin-top: 17px;
+		}
+		.music_image{
+			width: 285px;
+			height: 285px;
+/*			border: 1px solid green;*/
+
+		}
+		.music_word{
+			font-size: 19px;
+			font-family: LiSu;
+/*			color: #3B99FC;*/
+			color:#4477CE;
+			margin: 5px;
+			text-align: center;
+		}
+		.aim{
+			widows: 100%;
+			height: 140px;
+			background: #CAAE6A;
+			color: #EBEBEB;
+			font-size: 17px;
+			text-align: center;
+			display: flex;
+    		align-items: center;
+			justify-content: center;
+			margin-top: 80px;
+		}
+		.last{
+			widows: 100%;
+			height: 70px;
+			background: #333333;
+			color: #EBEBEB;
+			font-size: 17px;
+			text-align: center;
+			line-height: 70px;
+			margin-top: 70px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="nav">
+		<div class="nav_logo">
+				<img src="image/logo.jpg" width="130" height="85" alt=""/>
+			</div>
+		<ul class="navlist">
+			<li class="btli"><a href="web-首页.html" >首页</a></li>
+			<li class="btli"><a href="web-个人经历.html">个人经历&or;</a>
+				<ul class="droplist">
+					<li><a href="web-个人经历.html#introduce_title">个人简介</a></li>
+					<li><a href="web-个人经历.html#act_title">演艺经历</a></li>
+					<li><a href="web-个人经历.html#evaluate_title">人物评价</a></li>
+				</ul>
+			</li>
+			<li class="btli-first"><a href=""><b>音乐作品</b></a></li>
+			<li class="btli"><a href="web-演出日程.html">演出日程&or;</a>
+				<ul class="droplist">
+					<li><a href="web-演出日程.html#concert1_title">地表最强2</a></li>
+					<li><a href="web-演出日程.html#concert2_title">嘉年华</a></li>
+				</ul>
+			</li>
+			<li class="btli"><a href="web-新闻与媒体.html">新闻与媒体&or;</a>
+				<ul class="droplist">
+					<li><a href="web-新闻与媒体.html#music_title">作品咨询</a></li>
+					<li><a href="web-新闻与媒体.html#life_title">日常动态</a></li>
+				</ul>
+			</li>
+			<li class="btli"><a href="">社区互动&or;</a>
+				<ul class="droplist">
+					<li><a href="">下拉</a></li>
+					<li><a href="">下拉</a></li>
+					<li><a href="">下拉</a></li>
+					<li><a href="">下拉</a></li>
+				</ul>
+			</li>
+			<li class="btli"><a href="">商城&or;</a>
+				<ul class="droplist">
+					<li><a href="">下拉</a></li>
+					<li><a href="">下拉</a></li>
+					<li><a href="">下拉</a></li>
+					<li><a href="">下拉</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	
+	<div id="album_title">精选专辑</div>
+	<div class="album_background">
+		<div class="album">
+			<div class="album_content"><img src="专辑/Jay.jpg" width="100%" height="100%" /> </div>
+			<div class="album_content"><img src="专辑/范特西.jpg" width="100%" height="100%" /></div>
+			<div class="album_content"><img src="专辑/七里香.jpg" width="100%" height="100%" /></div>
+			<div class="album_content"><img src="专辑/11月的肖邦.jpg" width="100%" height="100%" /></div>
+			<div class="album_content"><img src="专辑/依然范特西.jpg" width="100%" height="100%" /></div>
+			<div class="album_content"><img src="专辑/我很忙.jpg" width="100%" height="100%" /></div>
+			<div class="album_content"><img src="专辑/跨时代.jpg" width="100%" height="100%" /></div>
+			<div class="album_content"><img src="专辑/周杰伦的床边故事.jpg" width="100%" height="100%" /></div>
+		</div>
+	</div>
+	
+	<div id="music_title">精选音乐单曲</div>
+	<div class="music_background">
+		<div class="music">
+			<div class="music_content">
+				<div class="music_image">
+					<img src="单曲/11月的肖邦.jpg" width="100%" height="100%" />
+					<p class="music_word">11月的肖邦——枫</p>
+					<p><audio src="music/枫.mp3" controls="controls"></audio></p>
+				</div>
+			</div>
+			<div class="music_content">
+				<div class="music_image">
+					<img src="单曲/Jay.jpg" width="100%" height="100%" />
+					<p class="music_word">Jay——可爱女人</p>
+					<p><audio src="music/可爱女人.mp3" controls="controls"></audio></p>
+				</div>
+			</div>
+			<div class="music_content">
+				<div class="music_image">
+					<img src="单曲/八度空间.jpg" width="100%" height="100%" />
+					<p class="music_word">八度空间——半岛铁盒</p>
+					<p><audio src="music/半岛铁盒.mp3" controls="controls"></audio></p>
+				</div>
+			</div>
+			<div class="music_content">
+				<div class="music_image">
+					<img src="单曲/范特西.jpg" width="100%" height="100%" />
+					<p class="music_word">范特西——开不了口</p>
+					<p><audio src="music/开不了口.mp3" controls="controls"></audio></p>
+				</div>
+			</div>
+			<div class="music_content">
+				<div class="music_image">
+					<img src="单曲/叶惠美.jpg" width="100%" height="100%" />
+					<p class="music_word">叶惠美——以父之名</p>
+					<p><audio src="music/以父之名.mp3" controls="controls"></audio></p>
+				</div>
+			</div>
+			<div class="music_content">
+				<div class="music_image">
+					<img src="单曲/十二新作.jpg" width="100%" height="100%" />
+					<p class="music_word">十二新作——大笨钟</p>
+					<p><audio src="music/大笨钟.mp3" controls="controls"></audio></p>
+				</div>
+			</div>
+			<div class="music_content">
+				<div class="music_image">
+					<img src="单曲/无与伦比.jpg" width="100%" height="100%" />
+					<p class="music_word">无与伦比（live）——瓦解</p>
+					<p><audio src="music/瓦解(Live) .mp3" controls="controls"></audio></p>
+				</div>
+			</div>
+			<div class="music_content">
+				<div class="music_image">
+					<img src="单曲/11月的肖邦.jpg" width="100%" height="100%" />
+					<p class="music_word">11月的肖邦——夜曲</p>
+					<p><audio src="music/夜曲.mp3" controls="controls"></audio></p>
+				</div>
+			</div>
+			<div class="music_content">
+				<div class="music_image">
+					<img src="单曲/依然范特西.jpg" width="100%" height="100%" />
+					<p class="music_word">依然范特西——夜的第七章</p>
+					<p><audio src="music/夜的第七章 .mp3" controls="controls"></audio></p>
+				</div>
+			</div>
+			<div class="music_content">
+				<div class="music_image">
+					<img src="单曲/不能说的秘密.jpg" width="100%" height="100%" />
+					<p class="music_word">不能说的秘密——不能说的秘密</p>
+					<p><audio src="music/不能说的秘密 .mp3" controls="controls"></audio></p>
+				</div>
+			</div>
+			<div class="music_content">
+				<div class="music_image">
+					<img src="单曲/我很忙.jpg" width="100%" height="100%" />
+					<p class="music_word">我很忙——我不配</p>
+					<p><audio src="music/我不配 .mp3" controls="controls"></audio></p>
+				</div>
+			</div>
+			<div class="music_content">
+				<div class="music_image">
+					<img src="单曲/魔杰座.jpg" width="100%" height="100%" />
+					<p class="music_word">魔杰座——给我一首歌的时间</p>
+					<p><audio src="music/给我一首歌的时间.mp3" controls="controls"></audio></p>
+				</div>
+			</div>
+			<div class="music_content">
+				<div class="music_image">
+					<img src="单曲/魔杰座.jpg" width="100%" height="100%" />
+					<p class="music_word">魔杰座——稻香</p>
+					<p><audio src="music/稻香.mp3" controls="controls"></audio></p>
+				</div>
+			</div>
+			<div class="music_content">
+				<div class="music_image">
+					<img src="单曲/哎呦，不错哦.jpg" width="100%" height="100%" />
+					<p class="music_word">哎呦，不错哦——手写的从前</p>
+					<p><audio src="music/手写的从前.mp3" controls="controls"></audio></p>
+				</div>
+			</div>
+			<div class="music_content">
+				<div class="music_image">
+					<img src="单曲/惊叹号.jpg" width="100%" height="100%" />
+					<p class="music_word">惊叹号——疗伤烧肉粽</p>
+					<p><audio src="music/疗伤烧肉粽.mp3" controls="controls"></audio></p>
+				</div>
+			</div>
+			<div class="music_content">
+				<div class="music_image">
+					<img src="单曲/周杰伦的床边故事.jpg" width="100%" height="100%" />
+					<p class="music_word">周杰伦的床边故事——告白气球</p>
+					<p><audio src="music/告白气球.mp3" controls="controls"></audio></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="aim">
+		如果你也听JAY，那我们就是朋友<br>
+		本站致力于宣传周杰伦的一些作品，帮助广大杰迷朋友和音乐爱好者
+	</div>
+	<div class="last">
+		JAY&nbsp;&nbsp;&nbsp;"www.123456789.com"
+	</div>
+</body>
+</html>
