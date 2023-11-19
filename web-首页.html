@@ -1,0 +1,597 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>JAY</title>
+	<link rel="shortcut icon" href="image/logo.jpg" />
+</head>
+	<style>
+		.slogan{
+			width: 240px;
+			height: 110px;
+			position: fixed;
+			bottom: 8%;
+			right: 8%;
+			border-radius: 25px;
+			background: #EEEEEE;
+			background: rgba(238, 238, 238, 0.5);
+			z-index: 10;
+			text-align: center;
+/*			line-height: 110px;*/
+			display: flex;
+    		align-items: center;
+			justify-content: center;
+			color: #3B99FC;
+			font-family:FZShuTi;
+			font-size: 25px;
+			user-select: none;
+		}
+		.nav{
+			width:100%;
+			height:85px;
+			border:0px solid red;
+			display: flex;
+			background:#3B99FC;
+			align-content: center;
+/*			padding: 0 22% 0 22%;*/
+			align-content: center;
+    		justify-content: center;
+		}
+		*{
+			margin: 0px;
+			padding:0px;
+			text-decoration: none;
+			list-style: none;
+		}
+		.nav_logo{
+			width:130px;
+			height:85px;
+			border:1px solid black;
+			margin: 0px 0px;
+			display: inline-block;
+			text-align: center;
+			vertical-align: top;
+/*			margin-top: 1px;*/
+		}
+		.btli{
+			float: left;
+			width: 138px;
+			line-height: 85px;
+			text-align: center;
+			position:relative;
+			z-index: 50;
+		}
+		.btli-first{
+			float: left;
+			width: 138px;
+			line-height: 85px;
+			text-align: center;
+			background: #2676E3;
+		}
+/*
+		.navlist{
+			float: right;
+		}
+*/
+		.navlist a{
+			color: #fff;
+			display: block;
+		}
+		.navlist a:hover{
+			background: #2676E3;
+		}
+		
+		.droplist{
+			background: #3B99FC;
+/*			背景半透明*/
+			background-color: rgba(59, 153, 252, 0.5);
+			display: none;
+			
+		}
+		.btli:hover .droplist{
+			display: block;
+		}
+		.droplist li{
+			border-top: 1px solid #FFFFFF;
+			
+		}
+		
+/*
+		.play{
+			width: 1200px;
+			height: 750px;
+			border:1px solid red;
+			background-image: url("image/无与伦比.jpg");
+			background-image: url("image/1700013723435(1).jpg");
+			position: fixed;
+			left:50%;
+			transform: translate(-50%);
+			animation: 30s 1bt infinite;
+		}
+		@keyframes 1bt{
+			0%{background-image: url("image/1700013723435(1).jpg");}
+			25%{background-image: url("image/1700013765173(1).jpg");}
+			50%{background-image: url("image/1700013786087(1).jpg");}
+			75%{background-image: url("image/1700051765621(1).jpg");}
+		}
+*/
+		.carousel {
+        width: 1400px;
+        height: 700px;
+
+/*        border-radius: 0px;*/
+
+        overflow: hidden;
+
+        position: relative;
+		left:50%;
+		transform: translate(-50%);
+		animation: 30s 1bt infinite;
+    	}
+
+    	.carousel .container {
+        	width: 100%;
+        	height: 100%;
+
+        	position: relative;
+        	left: 0;
+
+        	display: flex;
+
+        	/* 过渡动画 1s */
+        	transition: all 1s;
+    	}
+/*
+		图片带有超链接
+    	.carousel .container a {
+        	width: 100%;
+        	height: 100%;
+
+        	flex-shrink: 0;
+    	}
+
+    	.carousel .container a img {
+        	width: 100%;
+        	height: 100%;
+			flex-shrink: 0;
+        	object-fit: cover;
+    	}
+*/
+		
+		.carousel .container img {
+    		width: 100%;
+    		height: 100%;
+    		flex-shrink: 0;
+    		object-fit: cover;
+		}
+
+    	.carousel .shift .btn {
+        /* 绝对定位且垂直居中 */
+        	position: absolute;
+        	top: 0;
+        	bottom: 0;
+        	margin: auto 0;
+
+        	background-color: teal;
+        	color: white;
+
+        	width: 50px;
+        	height: 50px;
+        	border-radius: 8px;
+
+        	font-size: 40px;
+        	font-weight: bold;
+
+        	/* 字符水平垂直居中 */
+        	line-height: 50px;
+        	text-align: center;
+
+        	cursor: pointer;
+
+        	user-select: none;
+
+        	/* 不透明度 0.5 */
+        	opacity: 0.5;
+    	}
+    	.carousel .shift .left {
+        	left: 20px;
+    	}
+    	.carousel .shift .right {
+        	right: 20px;
+    	}
+
+    	.carousel .bottom {
+        	position: absolute;
+
+        	bottom: 20px;
+
+        	/* 绝对定位水平居中 */
+        	left: 0;
+        	right: 0;
+        	margin: 0 auto;
+
+        	/* 宽度等同于内容宽度 */
+        	width: max-content;
+
+        	display: flex;
+        	/* 指示器间距 */
+        	gap: 10px;
+    	}
+
+    	.carousel .bottom .indicator {
+        	height: 5px;
+        	width: 40px;
+
+        	background-color: teal;
+
+        	opacity: 0.5;
+        	cursor: pointer;
+    	}
+
+    	.carousel:hover .bottom .indicator {
+        	opacity: 1;
+    	}
+    	.carousel:hover .shift .btn {
+        	opacity: 1;
+    	}
+		
+		.introduce{
+/*			width: 1360px;*/
+			width: 100%;
+			height: 510px;
+			margin: 0px auto;
+			margin-top: 80px;
+			background: #F4F4F4;
+/*			border: 1px solid red;*/
+		}
+		.introduce_cent{
+			width: 1200px;
+			height: 100%;
+			margin: 0px auto;
+/*			border: 1px solid blue;*/
+		}
+		.introduce_img{
+			width: 270px;
+			height: 510px;
+			float: left;
+/*
+			flex-shrink: 0;
+    		object-fit: cover;
+			display: block;
+*/
+		}
+		.introduce_word1{
+			width: 50px;
+			height: 510px;
+/*			border: 1px solid green;*/
+			writing-mode: vertical-rl;
+/*      		text-orientation: upright;*/
+			text-align: center;
+			line-height: 50px;
+			font-size: 30px;
+			color: #3B99FC;
+			margin-left: 300px;
+			text-align-last: justify;
+			float: left;
+/*			justify-content: space-between;*/
+		}
+		.introduce_word2{
+			width: 360px;
+			height: 510px;
+/*			border: 1px solid green;*/
+			margin-left: 830px;
+			color: #333333;
+			font-size: 16px;
+			line-height: 2.5;
+		}
+/*
+		.introduce.introduce_img img{
+			width: 100%;
+			height: 100%;
+			flex-shrink: 0;
+			object-fit: cover;
+	
+		}
+*/
+		
+		
+		.news_title{
+			width: 200px;
+			height: 40px;
+			color: #ff991c;
+			margin: 0px auto;
+			margin-top: 80px;
+			text-align: center;
+			line-height: 40px;
+		}
+		.news{
+			width: 1200px;
+			height: 255px;
+			border:2px solid #DEDEDE;
+			margin: 0px auto;
+/*			background: #3B99FC;*/
+		}
+		.new_li{
+			width: 525px;
+			height: 200px;
+			float: left;
+			margin-left: 60px;
+			margin-top: 15px;
+			font-size: 14px;
+			color: #ff991c;
+		}
+		.new_li li{
+			margin-top: 20px;
+		}
+		.new_li span{
+			float: right;
+		}
+		
+		
+		
+		.aim{
+			widows: 100%;
+			height: 140px;
+			background: #CAAE6A;
+			color: #EBEBEB;
+			font-size: 17px;
+			text-align: center;
+			display: flex;
+    		align-items: center;
+			justify-content: center;
+			margin-top: 80px;
+		}
+		
+		
+		
+		.last{
+			widows: 100%;
+			height: 70px;
+			background: #333333;
+			color: #EBEBEB;
+			font-size: 17px;
+			text-align: center;
+			line-height: 70px;
+			margin-top: 80px;
+		}
+		
+	</style>
+<body>
+	
+	<div class="slogan">
+		如果你也听JAY,<br>那我们就是好朋友
+	</div>
+	
+	<div class="nav">
+		<div class="nav_logo">
+				<img src="image/logo.jpg" width="130" height="85" alt=""/>
+			</div>
+		<ul class="navlist">
+			<li class="btli-first"><a href=""><b>首页</b></a></li>
+			<li class="btli"><a href="web-个人经历.html">个人经历&or;</a>
+				<ul class="droplist">
+					<li><a href="web-个人经历.html#introduce_title">个人简介</a></li>
+					<li><a href="web-个人经历.html#act_title">演艺经历</a></li>
+					<li><a href="web-个人经历.html#evaluate_title">人物评价</a></li>
+				</ul>
+			</li>
+			<li class="btli"><a href="web-音乐作品.html">音乐作品&or;</a>
+				<ul class="droplist">
+					<li><a href="web-音乐作品.html#album_title">精选专辑</a></li>
+					<li><a href="web-音乐作品.html#music_title">精选音乐单曲</a></li>
+				</ul>
+			</li>
+			<li class="btli"><a href="web-演出日程.html">演出日程&or;</a>
+				<ul class="droplist">
+					<li><a href="web-演出日程.html#concert1_title">地表最强2</a></li>
+					<li><a href="web-演出日程.html#concert2_title">嘉年华</a></li>
+				</ul>
+			</li>
+			<li class="btli"><a href="web-新闻与媒体.html">新闻与媒体&or;</a>
+				<ul class="droplist">
+					<li><a href="web-新闻与媒体.html#music_title">作品咨询</a></li>
+					<li><a href="web-新闻与媒体.html#life_title">日常动态</a></li>
+				</ul>
+			</li>
+			<li class="btli"><a href="">社区互动&or;</a>
+				<ul class="droplist">
+					<li><a href="">下拉</a></li>
+					<li><a href="">下拉</a></li>
+					<li><a href="">下拉</a></li>
+					<li><a href="">下拉</a></li>
+				</ul>
+			</li>
+			<li class="btli"><a href="">商城&or;</a>
+				<ul class="droplist">
+					<li><a href="">下拉</a></li>
+					<li><a href="">下拉</a></li>
+					<li><a href="">下拉</a></li>
+					<li><a href="">下拉</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	
+	<div class="carousel">
+<!--
+		图片带有超链接
+    	<div class="container">
+        	<a href="" target="_blank"
+            	><img src="image/1700013723435.jpg"
+        	/></a>
+        	<a href="" target="_blank"
+            	><img src="image/1700013765173.jpg"
+        	/></a>
+        	<a href="" target="_blank"
+            	><img src="image/1700013786087.jpg"
+        	/></a>
+			<a href="" target="_blank"
+            	><img src="image/1700051765621.jpg"
+        	/></a>
+    	</div>
+-->
+		<div class="container">
+        	<img src="image/1700013723435.jpg" />
+        	<img src="image/1700013765173.jpg" />
+        	<img src="image/1700013786087.jpg" />
+        	<img src="image/1700051765621.jpg" />
+    	</div>
+    	<div class="shift">
+        	<div class="btn left" onclick="leftShift()">&lt;</div>
+        	<div class="btn right" onclick="rightShift()">&gt;</div>
+    	</div>
+    	<div class="bottom"></div>
+	</div>
+<!--
+		<div class="play">
+			
+		</div>
+-->
+	<div class="introduce">
+		<div class="introduce_cent">
+			<div class="introduce_img"><img src="image/简介.jpg" width="270" height="510" alt="" /></div>
+			<div class="introduce_word1">
+<!--				<p>人</p><p>物</p><p>简</p><p>介</p>-->
+				人物简介
+			</div>
+			<div class="introduce_word2">
+				周杰伦(Jay Chou)，中国台湾流行乐男歌手、音乐人、演员、导演、编剧，毕业于淡江中学。<br>2000年, 发行首张个人专辑《Jay》其,曾先后获得十五座金曲奖、两届台湾金曲奖最佳国语男歌手、四届世界音乐大奖最畅销中华区艺人等奖项。<br>2005年,凭借动作片《头文字D》获得金马奖、金像奖最佳新人奖。<br>2007年,自编自导的文艺片《不能说的秘密》获得金马奖年度台湾杰出电影奖。<br>其代表作品有《枫》、《七里香》、《双截棍》 、《半岛铁盒》、《龙卷风》、《青花瓷》 、《头文字D》 、《不能说的秘密》、《满城尽带黄金甲》、《晴天》、《最伟大的作品》等。
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	<div class="news_title"><h3><b>最新资讯</b></h3></div>
+	<div class="news">
+		<div class="new_li">
+			<ul>
+				<li>日本翻拍周杰伦《不能说的秘密》京本大我饰演“叶湘伦”
+					<span>2023-11-16</span>
+				</li>
+				<li>周杰伦预告将发新单曲：12月等着！
+					<span>2023-11-15</span>
+				</li>
+				<li>周杰伦弹奏最新钢琴曲，佳士得完整宣传片，你看这像不像新歌预告？
+					<span>2023-11-09</span>
+				</li>
+				<li>2000.11.6-2023.11.6 周杰伦出道23周年
+					<span>2023-11-06</span>
+				</li>
+				<li>周杰伦更新动态：过一阵子发个单曲給你们会不会吓坏？
+					<span>2023-11-02</span>
+				</li>
+			</ul>
+		</div>
+		<div class="new_li">
+			<ul>
+				<li>周杰伦可能将于2024年在杭州举办演唱会
+					<span>2023-10-30</span>
+				</li>
+				<li>歌迷网上购买周杰伦太原演唱会门票被骗 太原公安辅警帮助追款
+					<span>2023-10-29</span>
+				</li>
+				<li>MGI隆重官宣！周杰伦嘉年华世界巡回演唱会将于2024年重返澳洲！
+					<span>2023-10-17</span>
+				</li>
+				<li>周杰伦演唱会再唱《倒带》，时隔19年与蔡依林隔空同台，也该释怀
+					<span>2023-10-15</span>
+				</li>
+				<li>周杰伦“嘉年华”世界巡回演唱会上海站火热开唱
+					<span>2023-10-12</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="aim">
+		如果你也听JAY，那我们就是朋友<br>
+		本站致力于宣传周杰伦的一些作品，帮助广大杰迷朋友和音乐爱好者
+	</div>
+	
+	<div class="last">
+		JAY&nbsp;&nbsp;&nbsp;"www.123456789.com"
+	</div>
+	
+</body>
+	
+	<script>
+    // 显示的图片下标
+    let index = 0
+
+    // 图片的数量
+    let imageCount = document.querySelectorAll(
+        ".carousel .container img"
+    ).length
+
+    const bottom = document.querySelector(".carousel .bottom")
+    for (let i = 0; i < imageCount; i++) {
+        // DOM 操作
+
+        // 创建底部按钮
+        const indicator = document.createElement("div")
+        indicator.classList.add("indicator")
+        indicator.onclick = () => setIndex(i)
+
+        bottom.append(indicator)
+    }
+
+    function createAuto() {
+        return setInterval(() => {
+            index++
+            refresh()
+        }, 3000)
+    }
+
+    // 自动滚动
+    let autoTimer = createAuto()
+
+    function refresh() {
+        if (index < 0) {
+            // 下标小于 0 时
+            // 设置最右的图片
+            index = imageCount - 1
+        } else if (index >= imageCount) {
+            // 下标超过上限时
+            // 设置最左的图片
+            index = 0
+        }
+
+        // 获取轮播框元素
+        let carousel = document.querySelector(".carousel")
+
+        //获取轮播框的宽度
+        let width = getComputedStyle(carousel).width
+        width = Number(width.slice(0, -2))
+
+        carousel.querySelector(".container").style.left =
+            index * width * -1 + "px"
+    }
+
+    let refreshWrapper = (func) => {
+        // refresh 装饰器
+        return function (...args) {
+            let result = func(...args)
+            refresh()
+
+            // 重置自动滚动
+            clearInterval(autoTimer)
+            autoTimer = createAuto()
+            return result
+        }
+    }
+
+    let leftShift = refreshWrapper(() => {
+        index--
+    })
+    let rightShift = refreshWrapper(() => {
+        index++
+    })
+
+    let setIndex = refreshWrapper((idx) => {
+        index = idx
+    })
+
+    refresh()
+</script>
+</html>
